@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.leaflet-routing-container, .leaflet-routing-error{
+  visibility: hidden;
+}
+.main-container{
+  display: flex;
+}
+
+.map-container {
+  height: 100%; 
+  width: 100%; 
+}
+
+.auto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: .5rem;
+}
+
+input {
+  padding: 10px;
+  height: 2rem;
+  width: 100%;
+  border: .5px solid gray;
+  border-radius: .3rem;
+  font-size: .8rem;
+  text-transform: capitalize;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  border: 2px solid #5C90AD;
+  border-radius: .3rem;
+  padding: .2rem;  
+}
+
+/* Estilo para el input */
+.input-container > input {
+  flex: 1;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Estilo para el botón "x" */
+.input-container > button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #999;
+  cursor: pointer;
+  margin-right: .5rem;
+}
+
+/* Estilo para el botón "x" al pasar el mouse sobre él */
+.input-container > button:hover {
+  color: #64a8cf;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.autoContainer {
+  border-width: 0px 1px 1px 1px;
+  background-color: #e4f6ff;
+  border-radius: .2rem;
+  right: 10px;
+  top: 52px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  padding: 5px;
+}
+
+.option,
+span {
+  font-size: .8rem;
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.container-corralon-location{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  margin-block: 1rem;
+  border: 2px solid #5C90AD;
+  border-radius: 5px;
+}
+
+
+.header-card-details{
+  background-color: #5C90AD;
+  padding: .3rem;
+  border-radius: 5px, 0;
+}
+
+.header-card-details > h2 {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 500;
+}
+
+.container-corralon-location > hr {
+  border: 1px solid;
+  margin-bottom: .5rem; 
+}
+
+.options-corralon{
+  margin-block: .3rem;
+  padding-left: .5rem;
+}
+
+.options-corralon-distance{
+  padding-left: .5rem;
+  background-color: #5C90AD;
+  padding: .2rem;
+}
+
+.options-corralon-distance > p{
+  color: white;
+  text-align: end;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.options-corralon > p{
+  font-size: .9rem;
+  color: #5a5a5a;
+  font-weight: 300;
+}
+
+.options-corralon > p > span{
+  font-size: .9rem;
+  color: #5a5a5a;
+  font-weight: 500;
+}
+
+.userlocartion-details{
+  margin-top: 1rem;
+}
